@@ -6,6 +6,7 @@
         <slot name="main"></slot>
       </div>
     </LayoutContent>
+    <LayoutFooter></LayoutFooter>
   </div>
 </template>
 <style lang="css">
@@ -22,10 +23,12 @@
 <script type="ts">
   import LayoutHeader from './header/header';
   import LayoutContent from './content/content';
+  import LayoutFooter from './footer/footer';
   export default {
     components: {
       LayoutHeader,
-      LayoutContent
+      LayoutContent,
+      LayoutFooter
     }
   };
 </script>

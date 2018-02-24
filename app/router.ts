@@ -12,4 +12,5 @@ export default (application: Application) => {
   router.get('/app/api/article/:id', controller.app.app.detail);
   router.get('/app(/.+)?', controller.app.app.index);
   router.get('/client', controller.home.home.client);
+  router.get('/pager', controller.home.home.pager);
 };

@@ -7,22 +7,22 @@ import ListView from './list.vue';
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'history',
   base: '/app',
+  mode: 'history',
   routes: [
     {
+      component: ListView,
       path: '/',
-      component: ListView
     },
     {
+      component: ListView,
       path: '/list',
-      component: ListView
     },
     {
+      component: DetailView,
       path: '/detail/:id',
-      component: DetailView
-    }
-  ]
+    },
+  ],
 });
 
 export default router;

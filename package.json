@@ -18,7 +18,9 @@
     "kill-win": "taskkill -PID $(netstat -ano | findstr 7001|awk '{print $5}') -F",
     "restart": "npm run kill-port && npm run start",
     "lint": "tslint .",
-    "fix": "tslint --fix ."
+    "fix": "tslint --fix .",
+    "debug": "egg-bin debug",
+    "egg-dev": "egg-bin dev"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -79,7 +81,8 @@
     "uglifyjs-webpack-plugin": "^1.1.2",
     "vconsole": "^3.0.0",
     "vue-template-compiler": "^2.4.4",
-    "webpack-manifest-resource-plugin": "^2.0.2"
+    "webpack-manifest-resource-plugin": "^2.0.2",
+    "egg-bin": "^4.3.5"
   },
   "engines": {
     "node": ">=6.0.0"
